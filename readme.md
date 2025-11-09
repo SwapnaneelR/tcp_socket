@@ -1,6 +1,9 @@
 # TCP Socket in TS
 > This project implements a simple web socket server chat interface using CLI.
 
+## Demonstration
+> Watch this Youtube video that demonstrates all the mjor features : [YT Link](https://youtu.be/W1zcd58XUVQ)
+
 ## How to use it?
 ``git clone https://github.com/SwapnaneelR/tcp_socket``
 
