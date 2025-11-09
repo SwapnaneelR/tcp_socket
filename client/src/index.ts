@@ -32,7 +32,7 @@ client.on("data", (data) => {
     if (sender === username) return;
     console.log(`MSG ${sender}: ${text}`);
     return;
-  }
+  } 
   console.log(msg);
 });
 
