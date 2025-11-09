@@ -1,3 +1,5 @@
+import dotenv from "dotenv";
+dotenv.config();
 import net from "net";
 
 const PORT = process.env.PORT ? parseInt(process.env.PORT) : 4000;
@@ -15,7 +17,10 @@ const server = net.createServer((socket) => {
     if (!username) {
       if (cmd === "LOGIN") {
         const name = args[0];
-        if ([...clients.values()].includes(name)) return socket.write("ERR username-taken\n");
+        if ([...clients.values()].includes(name)) {
+          socket.write("ERR username-taken\n");
+          return;
+        }
         clients.set(socket, name);
         socket.write("OK\n");
         broadcast(`INFO ${name} joined\n`, socket);
