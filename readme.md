@@ -23,3 +23,8 @@ Navigate to both the directories :
 - User join/disconnect notifications
 
 - ``WHO`` command to list connected users
+
+
+## Bonus Feature
+
+- Clients can DM to each other (``DM <username> <message>``)
