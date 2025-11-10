@@ -28,3 +28,4 @@ Navigate to both the directories :
 ## Bonus Feature
 
 - Clients can DM to each other (``DM <username> <message>``)
+- PING PONG and Inactivity check
